@@ -1,6 +1,6 @@
 services:
-  - type: web
-    name: telegram-alert-bot
+  - type: worker
+    name: nse-market-scanner
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python alert_bot.py
+    startCommand: python bot_scheduler.py
